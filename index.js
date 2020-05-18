@@ -36,6 +36,10 @@ app.get('/info', (req, res) => {
     <p>${new Date()}</p>`);
 })
 
+app.get('/readme', (req, res) => {
+    res.send(readme.md);
+})
+
 app.get('/api/persons', (req, res) => {
     res.json(persons);
 })
